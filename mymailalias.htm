@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protect your inbox with mymailalias.com. Create unlimited email aliases and forward safely.">
+    <title>mymailalias.com - Protect Your Email</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #F5F7FA;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:focus, a:hover {
+            text-decoration: underline;
+        }
+        /* Coming Soon Banner */
+        .coming-soon-banner {
+            background: linear-gradient(90deg, #FF6A3D, #FF3D81);
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            animation: slideDown 1s ease-out;
+            position: relative;
+            z-index: 1000;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #3A8DFF, #1E62D0);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 15px 0 0;
+            font-size: 1.4rem;
+        }
+        /* Main Section */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1E62D0;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        section ul li {
+            background: white;
+            margin: 15px 0;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        section ul li:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        section ul li:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        section ul li::before {
+            content: '✔️';
+            font-size: 1.5rem;
+            color: #3A8DFF;
+        }
+        /* Footer */
+        footer {
+            background: #f0f0f0;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            animation: fadeInUp 1s ease-out;
+        }
+        footer a {
+            color: #3A8DFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer p {
+            margin: 10px 0 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            section ul li {
+                font-size: 1rem;
+                padding: 15px 20px;
+            }
+        }
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-banner">
+        🚀 Coming Soon: Exciting New Features!
+    </div>
+    <header>
+        <h1>Protect Your Inbox</h1>
+        <p>Create unlimited email aliases and forward safely with mymailalias.com</p>
+    </header>
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Unlimited email aliases for free</li>
+            <li>Protect your real email address</li>
+            <li>Easy to use and manage</li>
+            <li>Secure and private forwarding</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 mymailalias.com. All rights reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
